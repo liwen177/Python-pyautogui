@@ -29,8 +29,8 @@ def login_to_course(t,num):
 
     element = driver.find_element(By.ID, 'phone')
     element1 = driver.find_element(By.ID, 'pwd')
-    element.send_keys('your phone number')#有替换成你的手机号码
-    element1.send_keys('your password')#替换成你的密码
+    element.send_keys('15074801631')#有替换成你的手机号码
+    element1.send_keys('lei821019')#替换成你的密码
 
     # 点击登录
     login_button = driver.find_element(By.ID, 'loginBtn')
@@ -47,7 +47,7 @@ def login_to_course(t,num):
     pyautogui.click(622,330)
     find_img('my_study')
     time.sleep(1)
-    find_img1('course')#替换成你需要看的课程的截图，可以看我提供的例子，在img文件中对应名称查找img_course.png
+    find_img1('img_course')#替换成你需要看的课程的截图，可以看我提供的例子，在img文件中对应名称查找img_course.png
     # time.sleep(5)
     # pyautogui.click(100,550,duration=0.5)
     find_img('chapter1')
